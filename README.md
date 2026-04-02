@@ -26,5 +26,6 @@ Evolution de la kurtosis à mesure que N augmente :
 ![kurtosis](https://github.com/user-attachments/assets/61e81564-49e0-46b8-a5f0-0407b5d5887e)
 
 (d'autres graphiques sont visibles dans le fichier du tp)
+C'est le phénomène de curse of dimensionality (https://en.wikipedia.org/wiki/Curse_of_dimensionality#Distance_function) : la fonction distance perd son intérêt en haute dimension puisqu'elle devient de moins en moins "discriminante" (donc les aglos comme nearest neighbor deviennent moins pertinents)
 
 ### Lab 2
