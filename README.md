@@ -28,7 +28,7 @@ Evolution de la kurtosis à mesure que N augmente :
 (d'autres graphiques sont visibles dans le fichier du tp)
 C'est le phénomène de curse of dimensionality (https://en.wikipedia.org/wiki/Curse_of_dimensionality#Distance_function) : la fonction distance perd son intérêt en haute dimension puisqu'elle devient de moins en moins "discriminante" (donc les aglos comme nearest neighbor deviennent moins pertinents)
 
-## Module 2 : Mathematical foundations of machine learning
+## Module 3 : Mathematical foundations of machine learning
 ### Lab : `Linear_regression.ipynb`
 
 Le but du TP est de se familiariser avec TensorFlow et pour cela d'implémenter une régression linéaire assez simple pour comprendre comment la librairie fonctionne. Pour cela, on implémente à la fois la méthode avec l'équation normale mais aussi celle avec descente de gradient.
