@@ -45,3 +45,27 @@ Visualisation de l'évolution du coût pendant l'entraînement (méthode descent
 <p>
 <img width="435" height="277" alt="Capture d’écran 2026-04-03 à 18 56 57" src="https://github.com/user-attachments/assets/4764f8d0-7ec2-4dc2-971e-0b7e5794a68e" />
 </p>
+
+## Module 4 : Supervised learning for finance
+### Lab : `Tobit_regression.iypnb`
+Régression Tobit : prendre en compte le fait que certaines données ont des domaines de définition bien particulier.
+
+On entraîne aussi des modèles non linéaires, plus expressifs, qui peuvent modéliser des relations non linéaires.
+
+### Lab : `Bank_failure.iypnb`
+Prédiction de faillite bancaire à partir de données issues du FDIC.
+Analyse préliminaire des données :
+<img width="563" height="556" alt="Capture d’écran 2026-04-08 à 20 40 32" src="https://github.com/user-attachments/assets/e56f8a3c-120c-4e47-9121-327c33fc7282" />
+
+En effet, il semble assez facile de séparer les données.
+Résultats de la régression logistique :
+<img width="366" height="298" alt="Capture d’écran 2026-04-08 à 20 40 58" src="https://github.com/user-attachments/assets/6a06bb80-aef7-4b42-b380-8d59622ecbfd" />
+
+C'est la ROC curve : pour chaque seuil possible, on regarde comment le modèle se comporter (par exemple, si le seuil vaut 0.2, alors quand le modèle output un nombre > 0.2 on considère la classe prédite comme 1, sinon 0). Donc ce test montre le compromis entre détecter les positifs et faire des erreurs. En général dans des cas plus réalistes (moins séparables linéairement), la courbe ROC ressemble plutôt à :
+
+<img width="1919" height="1080" alt="662c42679571ef35419c9904_647603c5a947b640e4b1eecd_classification_metrics_img_header-min" src="https://github.com/user-attachments/assets/bdbff793-889b-40fb-ba29-6c0cd951c589" />
+c'est-à-dire qu'on arrive pas à parfaitement balancer le compromis "faire des erreurs" et "détectet les positifs".
+
+Le AUC (area under curve) est l'aire sous cette courbe, et correspond à la probabilité ait un score plus élevé qu'un négatif, donc plus il est proche de 1 mieux c'est.
+
+
